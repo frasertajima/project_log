@@ -86,7 +86,7 @@ A theme of training/serving large scientific workloads on a single consumer RTX 
 Under construction (not on github):
 
 ### COBOLMM:
-a COBOL IBM terminal-styled CLI application that gathers various projects and makes them accessible. Vocabulary, books and Kindle clippings gathered decades-old collections and enabled easy loading of data, browsing, searching, editing and other maintenance as well as export. Missing vocabulary definitions can be filled in with local AI to reduce workload. 
+A COBOL IBM terminal-styled CLI application that gathers various projects and makes them accessible. Vocabulary, books and Kindle clippings gathered decades-old collections and enabled easy loading of data, browsing, searching, editing and other maintenance as well as export. Missing vocabulary definitions can be filled in with local AI to reduce workload. 
 
 The unifying goal of the project is to enable easy search and access to all information that I am creating or using (without irrelevant material or hits as is common with standard search and other tools). Original 1-2s search times under COBOL upgraded to millisecond search using trigram search and Rust search engines. COBOL limitations uncovered and required the switch to Rust.
 
