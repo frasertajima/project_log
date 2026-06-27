@@ -4,7 +4,7 @@
 
 1995: OS/2 VX-REXX Real Estate conveyancing document production application
 
-A full real estate conveyancing document production application for production use in real estate conveyances in British Columbia within my own law firm. Produced all documents required for the transaction with all calculations. Each document and calculation was verified manually but in production the system was without error.
+A full real estate conveyancing document production application for production use during real estate conveyances in British Columbia within my own law firm. Produced all documents required for the transaction with all calculations. Each document and calculation was verified manually for each client file but in production the system was without error.
 
 
 ## GitHub repositories
@@ -88,7 +88,7 @@ Under construction (not on github):
 ### COBOLMM:
 a COBOL IBM terminal-styled CLI application that gathers various projects and makes them accessible. Vocabulary, books and Kindle clippings gathered decades-old collections and enabled easy loading of data, browsing, searching, editing and other maintenance as well as export. Missing vocabulary definitions can be filled in with local AI to reduce workload. 
 
-The unifying goal of the project is to enable easy search and access to all information that I am creating or using (without irrelevant material or hits as is common with standard search and other tools).
+The unifying goal of the project is to enable easy search and access to all information that I am creating or using (without irrelevant material or hits as is common with standard search and other tools). Original 1-2s search times under COBOL upgraded to millisecond search using trigram search and Rust search engines. COBOL limitations uncovered and required the switch to Rust.
 
 Charts supports equity trading by downloading daily or weekly charts along with local or cloud LLM analysis of the charts. Custom charts can also be collected and analysed. SEC 10-K and 10-Q filings conveniently gather and analyse SEC filings using local or cloud LLM and enable browsing and searching of these reports. CVaR portfolio runs a portfolio optimisation run over S&P500 stocks using Nvidia’s cuFolio portfolio optimiser and produces a report concerning the portfolio composition and changes from the past.
 
@@ -117,4 +117,8 @@ Stash file search replicates the command line utility `stash` to enable search o
 
 ### stash:
 
-Stash (file search), mdstash (markdown content search) and pdfstash (pdf content search) employ tiny pointers and trigram search for millisecond search results using a compact index for constant time results (irrespective of growth in dataset size). This is particularly useful when data is on a lower-end/slow NAS, slow external HD or other devices that are not necessarily connected to the machine at the time of search, and other messy collections of data. There are 0 I/O operations and no file operations on the NAS until the user ctrl+clicks the file link to open the file. The user can tailor the data sources (internal and external) so that the search results are always filled with user-relevant data (not junk files created by the OS or other programs).
+Stash (file search), mdstash (markdown content search) and pdfstash (pdf content search) employ tiny pointers and trigram search for millisecond search results using a compact index for constant time results (irrespective of growth in dataset size) in Rust. This is particularly useful when data is on a lower-end/slow NAS, slow external HD or other devices that are not necessarily connected to the machine at the time of search, and other messy collections of data. There are 0 I/O operations and no file operations on the NAS until the user ctrl+clicks the file link to open the file. The user can tailor the data sources (internal and external) so that the search results are always filled with user-relevant data (not junk files created by the OS or other programs).
+
+---
+
+Later projects such as COBOLMM and stash use Claude extensively but still require my design and programming choices. Indeed, it is my own ideas and approaches that leverage Claude's considerable power to develop results that have consistently exceeded expectatons. Working with LLMs is not passive: you still need to review, solve problems and think, which makes the projects contained in this log a learning experience. New ideas like the tensor core engine, MPDOK and tiny pointers search build upon a foundation of research and iteration with great technical assistance from Claude. Your ideas and solutions still greatly impact the outcome of the project.
