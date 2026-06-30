@@ -119,6 +119,10 @@ Stash file search replicates the command line utility `stash` to enable search o
 
 Stash (file search), mdstash (markdown content search) and pdfstash (pdf content search) employ tiny pointers and trigram search for millisecond search results using a compact index for constant time results (irrespective of growth in dataset size) in Rust. This is particularly useful when data is on a lower-end/slow NAS, slow external HD or other devices that are not necessarily connected to the machine at the time of search, and other messy collections of data. There are 0 I/O operations and no file operations on the NAS until the user ctrl+clicks the file link to open the file. The user can tailor the data sources (internal and external) so that the search results are always filled with user-relevant data (not junk files created by the OS or other programs).
 
+### concept search engine:
+
+https://youtu.be/CLoJR8PJD3c?si=1kFbPsyXgyBLqEtX
+
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively but still require my design and programming choices. Indeed, it is my own ideas and approaches that leverage Claude's considerable power to develop results that have consistently exceeded expectatons. Working with LLMs is not passive: you still need to review, solve problems and think, which makes the projects contained in this log a learning experience. New ideas like the tensor core engine, MPDOK and tiny pointers search build upon a foundation of research and iteration with great technical assistance from Claude. Your ideas and solutions still greatly impact the outcome of the project.
