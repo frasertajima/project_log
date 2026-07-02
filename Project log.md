@@ -125,4 +125,4 @@ https://youtu.be/CLoJR8PJD3c?si=1kFbPsyXgyBLqEtX
 
 ---
 
-Later projects such as COBOLMM and stash use Claude extensively but still require my design and programming choices. Indeed, it is my own ideas and approaches that leverage Claude's considerable power to develop results that have consistently exceeded expectatons. Working with LLMs is not passive: you still need to review, solve problems and think, which makes the projects contained in this log a learning experience. New ideas like the tensor core engine, MPDOK and tiny pointers search build upon a foundation of research and iteration with great technical assistance from Claude. Your ideas and solutions still greatly impact the outcome of the project.
+Later projects such as COBOLMM and stash use Claude extensively but still require my design and programming choices/corrections. 
