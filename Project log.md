@@ -123,6 +123,11 @@ Stash (file search), mdstash (markdown content search) and pdfstash (pdf content
 
 https://youtu.be/CLoJR8PJD3c?si=1kFbPsyXgyBLqEtX
 
+### RANSAC Android scanner
+
+[RANSAC scanner on android
+](https://felixquinihildebet.wordpress.com/2026/07/05/ransac-scanner-on-android/)
+
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively but still require my design and programming choices/corrections. 
