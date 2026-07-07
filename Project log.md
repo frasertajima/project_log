@@ -128,7 +128,7 @@ https://youtu.be/CLoJR8PJD3c?si=1kFbPsyXgyBLqEtX
 [RANSAC scanner on android
 ](https://felixquinihildebet.wordpress.com/2026/07/05/ransac-scanner-on-android/)
 
-### Upgraded Portfolio Studia and MPDOK signal board
+### Upgraded Portfolio Studio and MPDOK signal board
 
 - integrated into COBOLMM menu structure for ease of access
 - experiment with RANSAC inspired alert board
