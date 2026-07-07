@@ -128,6 +128,13 @@ https://youtu.be/CLoJR8PJD3c?si=1kFbPsyXgyBLqEtX
 [RANSAC scanner on android
 ](https://felixquinihildebet.wordpress.com/2026/07/05/ransac-scanner-on-android/)
 
+### Upgraded Portfolio Studia and MPDOK signal board
+
+- integrated into COBOLMM menu structure for ease of access
+- experiment with RANSAC inspired alert board
+<img width="3640" height="592" alt="Screenshot From 2026-07-07 15-12-14" src="https://github.com/user-attachments/assets/cfdc1369-8694-45b5-ae18-117a170902df" />
+
+
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively but still require my design and programming choices/corrections. 
