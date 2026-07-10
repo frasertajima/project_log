@@ -134,7 +134,12 @@ https://youtu.be/CLoJR8PJD3c?si=1kFbPsyXgyBLqEtX
 - experiment with RANSAC inspired alert board
 <img width="3640" height="592" alt="Screenshot From 2026-07-07 15-12-14" src="https://github.com/user-attachments/assets/cfdc1369-8694-45b5-ae18-117a170902df" />
 
-
+### GP Engine
+[gp_engine](https://github.com/frasertajima/gp_engine)
+- 3rd engine after tensor core, MPDOK: gp engine handles Gaussian process pipeline
+- OOC component running (in development) and tested to n=200k
+- labs in progress to benchmark against published results
+  
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively but still require my design and programming choices/corrections. 
