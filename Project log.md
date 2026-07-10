@@ -142,4 +142,4 @@ https://youtu.be/CLoJR8PJD3c?si=1kFbPsyXgyBLqEtX
   
 ---
 
-Later projects such as COBOLMM and stash use Claude extensively but still require my design and programming choices/corrections. 
+Later projects such as COBOLMM and stash use Claude extensively. 
