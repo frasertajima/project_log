@@ -139,6 +139,7 @@ https://youtu.be/CLoJR8PJD3c?si=1kFbPsyXgyBLqEtX
 - 3rd engine after tensor core, MPDOK: gp engine handles Gaussian process pipeline
 - OOC component running (in development) and tested to n>300k
 - [gp lab](https://github.com/frasertajima/gp_engine/tree/main/gb_lab)
+- place_gpc_lab
   
 ---
 
