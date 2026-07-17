@@ -140,6 +140,11 @@ https://youtu.be/CLoJR8PJD3c?si=1kFbPsyXgyBLqEtX
 - OOC component running (in development) and tested to n>300k
 - [gp lab](https://github.com/frasertajima/gp_engine/tree/main/gb_lab)
 - place_gpc_lab
+
+### Updated Place Android Scanner
+- Laplace gpc and svm
+- on phone video processing and easy route acquistion for testing
+- higher lock ratio achieved on complex route
   
 ---
 
