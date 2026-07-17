@@ -145,7 +145,11 @@ https://youtu.be/CLoJR8PJD3c?si=1kFbPsyXgyBLqEtX
 - Laplace gpc and svm
 - on phone video processing and easy route acquistion for testing
 - higher lock ratio achieved on complex route
-  
+
+### GP mining lab (extension of MPDOK mining lab)
+- economic benefit to Laplace GPC vs SVM in low confidence environments
+
+
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
