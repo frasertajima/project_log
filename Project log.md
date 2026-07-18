@@ -148,11 +148,15 @@ https://youtu.be/CLoJR8PJD3c?si=1kFbPsyXgyBLqEtX
 
 ### GP mining lab (extension of MPDOK mining lab)
 - economic benefit to Laplace GPC vs SVM in low confidence environments
+- compare vs MPDOK as same dataset used
 
 ### bayesian decision lab
 - exploring payoff outcomes with SVM, Laplace GPC mean only and Laplace GPC full posterior to sketch out decision making under conditions of uncertainty
 
-
+### porphyry_cu_gpc_lab
+- same bayesian decision engine as with gp mining lab (gold) but this time with copper
+- similar holdings
+  
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
