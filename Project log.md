@@ -149,6 +149,9 @@ https://youtu.be/CLoJR8PJD3c?si=1kFbPsyXgyBLqEtX
 ### GP mining lab (extension of MPDOK mining lab)
 - economic benefit to Laplace GPC vs SVM in low confidence environments
 
+### bayesian decision lab
+- exploring payoff outcomes with SVM, Laplace GPC mean only and Laplace GPC full posterior to sketch out decision making under conditions of uncertainty
+
 
 ---
 
