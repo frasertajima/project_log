@@ -166,6 +166,10 @@ Python/Jupyter via a PyO3 wheel — rather than only through this codebase's
 existing app-specific ctypes wrappers (`gp_engine`, `MPDOK/kriging`,
 `rbf_pointcloud`, `rbf_spatial`).
 
+### cvar_gp_lab
+- Bayesian CVaR
+- integrated into Portfolio Studio
+- integrated into COBOLMM as mirror to cuFolio portfolio (including Smart1 and Smart2 portfolios)
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
