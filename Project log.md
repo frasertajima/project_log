@@ -156,7 +156,16 @@ https://youtu.be/CLoJR8PJD3c?si=1kFbPsyXgyBLqEtX
 ### porphyry_cu_gpc_lab
 - same bayesian decision engine as with gp mining lab (gold) but this time with copper
 - similar holdings
-  
+
+### rbfx
+- A compact Rust library wrapping MPDOK/gp_engine's proven mixed-precision dense
+solver (`gp_solver.so`: FP32 Cholesky factor + FP64 iterative refinement,
+CUDA Fortran/cuBLAS/cuSOLVER) so it's usable as a generic dense
+scattered-data-interpolation kernel — from a plain Rust program, or from
+Python/Jupyter via a PyO3 wheel — rather than only through this codebase's
+existing app-specific ctypes wrappers (`gp_engine`, `MPDOK/kriging`,
+`rbf_pointcloud`, `rbf_spatial`).
+
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
