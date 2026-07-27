@@ -186,6 +186,10 @@ existing app-specific ctypes wrappers (`gp_engine`, `MPDOK/kriging`,
 - best performance, lowest drawdown
 - [Portfolio studio](https://github.com/frasertajima/MPDOK/tree/main/portfolio_studio)
 
+### grid reserve lab
+- [grid reserve lab](https://github.com/frasertajima/gp_engine/tree/main/grid_reserve_lab)
+- only option that provides reliable results and lowest cost (gp soft-EM)
+
 
 ---
 
