@@ -149,13 +149,16 @@ https://youtu.be/CLoJR8PJD3c?si=1kFbPsyXgyBLqEtX
 ### GP mining lab (extension of MPDOK mining lab)
 - economic benefit to Laplace GPC vs SVM in low confidence environments
 - compare vs MPDOK as same dataset used
+- [gp mining](https://github.com/frasertajima/gp_engine/tree/main/mining_gpc_lab)
 
 ### bayesian decision lab
 - exploring payoff outcomes with SVM, Laplace GPC mean only and Laplace GPC full posterior to sketch out decision making under conditions of uncertainty
+- [MNIST lab](https://github.com/frasertajima/gp_engine/tree/main/mnist_gpc_lab)
 
 ### porphyry_cu_gpc_lab
 - same bayesian decision engine as with gp mining lab (gold) but this time with copper
 - similar holdings
+- [porphyry cu gpc lab](https://github.com/frasertajima/gp_engine/tree/main/porphyry_cu_gpc_lab)
 
 ### rbfx
 - A compact Rust library wrapping MPDOK/gp_engine's proven mixed-precision dense
@@ -165,11 +168,25 @@ scattered-data-interpolation kernel — from a plain Rust program, or from
 Python/Jupyter via a PyO3 wheel — rather than only through this codebase's
 existing app-specific ctypes wrappers (`gp_engine`, `MPDOK/kriging`,
 `rbf_pointcloud`, `rbf_spatial`).
+- [rbfx](https://github.com/frasertajima/rbfx)
 
 ### cvar_gp_lab
 - Bayesian CVaR
 - integrated into Portfolio Studio
 - integrated into COBOLMM as mirror to cuFolio portfolio (including Smart1 and Smart2 portfolios)
+- [gb lab](https://github.com/frasertajima/gp_engine/tree/main/gb_lab)
+
+### climate cat_lab
+- [climate cat lab](https://github.com/frasertajima/gp_engine/tree/main/gp_cat_lab)
+- same shortcoming as portfolio optimisation, this time in insurance
+- simulated dollar amounts are considerable; industry knows about the issue but has not fixed it, like in finance
+
+### gaussian process soft-EM portfolio studio addition
+- cuFolio, MPDOK and now gp soft-EM
+- best performance, lowest drawdown
+- [Portfolio studio](https://github.com/frasertajima/MPDOK/tree/main/portfolio_studio)
+
+
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
