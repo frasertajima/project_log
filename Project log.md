@@ -194,6 +194,9 @@ existing app-specific ctypes wrappers (`gp_engine`, `MPDOK/kriging`,
 - key finding: gp soft-em does not have a decisive advantage (over pooling, which is simpler)
 - soft-EM only shows a decisive advantage when there are rare, recurring regimes to iteratively model
 
+### hydro reserve lab
+- [hydro reserve lab](https://github.com/frasertajima/gp_engine/tree/main/hydro_reserve_lab)
+- regime change breaks statistical assumptions of past environment, e.g., climate change
 
 ---
 
