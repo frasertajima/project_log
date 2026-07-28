@@ -190,6 +190,10 @@ existing app-specific ctypes wrappers (`gp_engine`, `MPDOK/kriging`,
 - [grid reserve lab](https://github.com/frasertajima/gp_engine/tree/main/grid_reserve_lab)
 - only option that provides reliable results and lowest cost (gp soft-EM)
 
+### smh lab (bridge structure health/preventative maintenance)
+- key finding: gp soft-em does not have a decisive advantage (over pooling, which is simpler)
+- soft-EM only shows a decisive advantage when there are rare, recurring regimes to iteratively model
+
 
 ---
 
