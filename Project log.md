@@ -193,6 +193,7 @@ existing app-specific ctypes wrappers (`gp_engine`, `MPDOK/kriging`,
 ### smh lab (bridge structure health/preventative maintenance)
 - key finding: gp soft-em does not have a decisive advantage (over pooling, which is simpler)
 - soft-EM only shows a decisive advantage when there are rare, recurring regimes to iteratively model
+- [shm_lab](https://github.com/frasertajima/gp_engine/blob/main/shm_lab/SHM_LAB.ipynb)
 
 ### hydro reserve lab
 - [hydro reserve lab](https://github.com/frasertajima/gp_engine/tree/main/hydro_reserve_lab)
