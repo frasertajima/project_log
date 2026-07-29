@@ -199,6 +199,9 @@ existing app-specific ctypes wrappers (`gp_engine`, `MPDOK/kriging`,
 - [hydro reserve lab](https://github.com/frasertajima/gp_engine/tree/main/hydro_reserve_lab)
 - regime change breaks statistical assumptions of past environment, e.g., climate change
 
+### [tiny pointers hash join](https://github.com/frasertajima/tiny_pointers_hash_join/tree/main)
+- very niche use case where load > 95% but it may become useful when that is a constant condition
+  
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
