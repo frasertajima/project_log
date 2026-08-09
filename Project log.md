@@ -201,7 +201,20 @@ existing app-specific ctypes wrappers (`gp_engine`, `MPDOK/kriging`,
 
 ### [tiny pointers hash join](https://github.com/frasertajima/tiny_pointers_hash_join/tree/main)
 - very niche use case where load > 95% but it may become useful when that is a constant condition
-  
+
+### gp soft-em decision engine
+- refactored gp soft-em bayesian decision engine into rust and integrated into RUSTMM/COBOLMM for ease of access
+- added diagnostic function to enable selection of options:
+  Validated across 5 random-holdout splits at target reliability 0.99:
+  empirical:      reserve=1696.5725  won 60% of splits, mean gap from target -0.0120
+[-0.0460,+0.0090]
+  one_component:  reserve=111867.8001  won 20% of splits, mean gap from target +0.0100
+[+0.0100,+0.0100]
+  soft_em:        reserve=1814.1437  won 20% of splits, mean gap from target +0.0000
+[-0.0180,+0.0100]
+
+- gp soft-em tends to be extremely niche so it has been somewhat difficult to surface good lab examples but with this CLI framework we can surface the function easily on the command line, in Jupyter notebooks and with a local LLM workflow in the future
+- also ran a standard decision lab
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
