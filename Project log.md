@@ -218,6 +218,18 @@ existing app-specific ctypes wrappers (`gp_engine`, `MPDOK/kriging`,
 
 ### [svp_hessian_lab](https://github.com/frasertajima/svp_hessian_lab/tree/main)
 
+### sparse external key spaces bridge to dense GPU resident graph/vector representations (gpustash, hnswlib, METIS partioned graphs)
+- 0.04s to decode 217k full compressed neighbours set, 257ms index builds means that Sparsebridge RAG in RUSTMM is 10x faster than previous RAG
+- added "related items" to existing RUSTMM concept search engine using the sparsebridge engine: astounding initial search results on "handwritten notes" turning up:
+-     - [kindle] Peak (Ericsson, Anders)
+      As we shall see, the key to improved mental performance of almost any sort is the development of
+      mental structures that make it possible to avoid the limitations of short-term memory and deal
+      effectively with large amounts of information at once.
+-     - [kindle] The Economist - calibre (calibre)
+      Studies have found that writing on paper can improve everything from recalling a random series
+      of words to imparting a better conceptual grasp of complicated ideas.
+
+The second result is now turning up in the main concept search results (before I don't think it was).
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
