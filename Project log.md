@@ -229,7 +229,7 @@ existing app-specific ctypes wrappers (`gp_engine`, `MPDOK/kriging`,
       Studies have found that writing on paper can improve everything from recalling a random series
       of words to imparting a better conceptual grasp of complicated ideas.
 
-The second result is now turning up in the main concept search results (before I don't think it was).
+- The second result is now turning up in the main concept search results (before I don't think it was).
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
