@@ -239,7 +239,7 @@ compressed ANN graph) operate on dense array rows. `sparsebridge` is the bridge:
 (`id_index.py`) maps external ID → dense row (one `HashJoinTable`) and back (plain array
 indexing — the reverse direction needs no hash lookup at all, since rows are already dense).
 - https://felixquinihildebet.wordpress.com/2026/08/22/dynamic-sparse-embedded-lookup/
-- 3rd application: graph neural network with 252M node real dataset (bitcoin)
+- 3rd application: graph neural network with 252M node real dataset (bitcoin): https://felixquinihildebet.wordpress.com/2026/08/29/graph-neural-network-at-252m-node-scale/
 
 ---
 
