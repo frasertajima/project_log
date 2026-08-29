@@ -230,6 +230,17 @@ existing app-specific ctypes wrappers (`gp_engine`, `MPDOK/kriging`,
       of words to imparting a better conceptual grasp of complicated ideas.
 
 - The second result is now turning up in the main concept search results (before I don't think it was).
+
+### sparsebridge
+- A DLRM/recsys-style embedding table (or a vector search index) is addressed by an
+arbitrary sparse external ID (a user ID, a content hash, ...), but the GPU-resident
+compressed structures underneath (`hash_join_engine`'s tiny-pointer tables, `gpustash`'s
+compressed ANN graph) operate on dense array rows. `sparsebridge` is the bridge: `IdIndex`
+(`id_index.py`) maps external ID → dense row (one `HashJoinTable`) and back (plain array
+indexing — the reverse direction needs no hash lookup at all, since rows are already dense).
+- https://felixquinihildebet.wordpress.com/2026/08/22/dynamic-sparse-embedded-lookup/
+- 3rd application: graph neural network with 252M node real dataset (bitcoin)
+
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
