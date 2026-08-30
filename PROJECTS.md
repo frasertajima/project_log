@@ -25,6 +25,7 @@ status + what it's reusable for). When a project moves or a new one is born, upd
 | hybrid resilience / cheap base + learned correction / model drift | `~/machine_learning/hybrid_resilience_lab/` |
 | the whole arc / GNN lessons / monitoring design / concept drift | `~/machine_learning/hybrid_resilience_lab/ARC.md` |
 | the journey / the whole portfolio narrative / what it's building toward | `~/machine_learning/claude_hub/JOURNEY.md` |
+| escalation lab / GF-QX repair / when to pay for the LLM / VoI | `~/machine_learning/escalation_lab/LAB_PLAN.md` |
 | SimplePINN / v41 / zero-parameter PINN / gas dispersion | `~/machine_learning/CIFAR-10/v41_pinn_production/` |
 | emergency response / leak detection / source inversion | `~/machine_learning/CIFAR-10/v36_source_inversion/`, `v37`-`v40` |
 | SGS turbulence / LES / latent dynamics / PDE surrogate | `~/machine_learning/CIFAR-10/v30*_*/` |
@@ -3439,3 +3440,35 @@ the benchmarks were measured on — reruns here will differ slightly; don't comp
 `uncached` event per call to `~/.cache/sparsebridge/build_index_events.jsonl` (hit/miss
 decided by whether the builder callable runs — exact, and `ragstash/cache_utils.py` was left
 untouched). `python s0_cache_log_report.py` is now the one-command unshelve check.
+
+### escalation_lab — the uncertainty machinery meets a real recurring decision (2026-08-29)
+
+- **Path:** `~/machine_learning/escalation_lab/` (`LAB_PLAN.md`, Phase E0 not yet run)
+- **What:** repairs the `GF`/`QX` escalation decision in RUSTMM's SEC fast-scoring path —
+  cheap ridge probe vs. expensive GL/QL LLM scoring — using `gp_engine`'s posterior,
+  `decision.py`/`voi.py`'s VoI machinery, and `ARC.md`'s monitoring lessons. **The first real
+  domain for `decision_harness_lab`'s never-started Phase 3**: a decision that is real,
+  recurring, and costly, which is exactly what `vol_regime_lab` failed to satisfy.
+- **A correction made while scoping**, recorded because JOURNEY.md §9 asserted it wrongly:
+  the fast scorer is **already per-dimension gated** (`phase1_probes.py` computes LOO-by-ticker
+  Spearman + residual band per dim; `phase1_score.py` gates at `DISTILL_THRESHOLD=0.60`) —
+  grouping LOO by ticker is correct practice. JOURNEY.md §9 has been corrected in place.
+- **The five real defects (D1-D5)**: uncertainty is per-dimension but never per-filing; the
+  within-filing chunk spread is computed by `per_chunk_probe()` and then **discarded by a
+  `.mean()`**; `novelty()` is a covariate-shift detector (ARC §4.6: structurally cannot see
+  concept drift) and is chunk-averaged so a few novel sections wash out; the `0.60` threshold
+  has no cost model; and the two gates don't compose at the real *(filing, dimension)* unit.
+- **Phases:** E0 harness + kill condition (`decision.has_probe_niche()` on real elicited costs
+  — if no probe niche exists, the lab stops there); E1 per-filing posterior, cheapest first
+  (chunk spread → **Bayesian-ridge closed form**, since `_ridge()` is already a Bayesian linear
+  posterior mean → GP only on measured shortfall); E2 the VoI policy replacing the threshold;
+  E3 turn the existing `--anchor` label budget into ARC §4.8 lift monitoring. **E4 (generalise
+  into a reusable decision-under-uncertainty workflow) deliberately deferred** — this codebase
+  extracts patterns after the second instance, not before the first.
+- **Small-n objection deliberately overruled and documented**: n≈31/270 fails the four-point
+  litmus test on size, so **no claim is made that this exercises the engines** — the value is
+  the statistics and decision layer. A chunk-level GP (10^5-10^6 embeddings) would clear the
+  bar and is a legitimate later escalation.
+- **Terminology trap pinned in the plan**: in `voi.py` "probe" = the cheap *information action*;
+  in RUSTMM "probe" = the cheap *scorer*. Here the **LLM call is voi.py's probe**. Invert this
+  and every payoff matrix is backwards.

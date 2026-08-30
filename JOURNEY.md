@@ -171,9 +171,16 @@ Three things are already known to be wrong with that, from our own documents:
 1. **The novelty gate is a covariate-shift detector.** `ARC.md` §4.6 established that this
    class of monitor is *structurally incapable* of seeing concept drift — the filing looks
    normal, the score looks normal, the relationship has changed. It will show green.
-2. **One global gate covers 14 dimensions of very different reliability.** The doc's own
-   caveat: the ρ≈0.84 is *in-sample*; held-out is **0.4–0.84 by dimension**. `guidance_tone`
-   and `management_confidence` are not `liquidity`, and are not treated differently.
+2. **CORRECTED (2026-08-29, on reading the code).** This section first claimed "one global
+   gate covers 14 dimensions of very different reliability." **That is false** —
+   `phase1_probes.py` computes a per-dimension leave-one-*ticker*-out Spearman and residual
+   band, and `phase1_score.py` gates per dimension at `DISTILL_THRESHOLD = 0.60`. The real
+   defect is narrower: **those numbers are per-dimension constants, never per-filing.** The
+   gate does not depend on the filing being scored at all, so the system can say "I am usually
+   unsure about this dimension" but never "I am unusually unsure about *this filing*."
+   A second, free signal is being discarded outright: `predict_filing()` returns the `.mean()`
+   over sub-chunks, so a filing whose chunks disagree violently and one whose chunks agree
+   perfectly yield identical features with identical confidence.
 3. **The confidence signal is a distance, not a posterior.** There is no per-filing,
    per-dimension uncertainty to threshold on, so no principled place to put the threshold.
 
