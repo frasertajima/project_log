@@ -243,6 +243,7 @@ indexing — the reverse direction needs no hash lookup at all, since rows are a
 
 ### RAG audit
 - adding audit and user/Claude feedback to RAG search results using sparsebridge and brute force RAG
+- [RAG_audit](https://github.com/frasertajima/project_log/tree/main/RAG_audit)
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
