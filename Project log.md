@@ -241,6 +241,8 @@ indexing — the reverse direction needs no hash lookup at all, since rows are a
 - https://felixquinihildebet.wordpress.com/2026/08/22/dynamic-sparse-embedded-lookup/
 - 3rd application: graph neural network with 252M node real dataset (bitcoin): https://felixquinihildebet.wordpress.com/2026/08/29/graph-neural-network-at-252m-node-scale/
 
+### RAG audit
+- adding audit and user/Claude feedback to RAG search results using sparsebridge and brute force RAG
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
