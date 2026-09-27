@@ -244,6 +244,9 @@ indexing — the reverse direction needs no hash lookup at all, since rows are a
 ### RAG audit
 - adding audit and user/Claude feedback to RAG search results using sparsebridge and brute force RAG
 - [RAG_audit](https://github.com/frasertajima/project_log/tree/main/RAG_audit)
+
+### Chunk lab
+- [chunk_lab](https://github.com/frasertajima/project_log/blob/main/LAB_PLAN.md)
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
