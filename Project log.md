@@ -247,6 +247,9 @@ indexing — the reverse direction needs no hash lookup at all, since rows are a
 
 ### Chunk lab
 - [chunk_lab](https://github.com/frasertajima/project_log/blob/main/LAB_PLAN.md)
+
+### RAG critique
+- [iterative improvement in RAG via critique, research and LLM/user feedback](https://github.com/frasertajima/project_log/blob/main/rstash%20Critique%20Loop%20Walkthrough.pdf)
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
