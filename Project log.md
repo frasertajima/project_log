@@ -245,11 +245,33 @@ indexing — the reverse direction needs no hash lookup at all, since rows are a
 - adding audit and user/Claude feedback to RAG search results using sparsebridge and brute force RAG
 - [RAG_audit](https://github.com/frasertajima/project_log/tree/main/RAG_audit)
 
-### Chunk lab
+### Chunk labS
 - [chunk_lab](https://github.com/frasertajima/project_log/blob/main/LAB_PLAN.md)
 
 ### RAG critique
 - [iterative improvement in RAG via critique, research and LLM/user feedback](https://github.com/frasertajima/project_log/blob/main/rstash%20Critique%20Loop%20Walkthrough.pdf)
+
+### rstash
+- RAG search plus research module; iterative research with human review/critique of findings
+- extensive source links and pdf downloads for assisting in research (rstash acts like a 1st draft for further research)
+- emphasis on accurate sourcing for reliable research finding: user ingests relevant pdfs found in course of research and re-asks rstash
+- results have been extensive and should save considerable research time while keeping full control over the research process
+
+### updcheck
+- systemwide update checking utility for Fedora Silverblue
+- host OS upgrates/security/firewall/API key and password handling modules
+- distrobox container updates
+- pip/conda/uv/venv environment updates; focus on ensuring updates don't proceed without full testing that nothing breaks; audit and undo features
+- sudo/YubiKey manual blocks for any operation that could alter files; manual review of proposed changes; updcheck is aimed at streamlining the manual upgrade process with conflict checking, auditing and other improvements
+- where an edge case takes updcheck out of the menu workflow, Claude is able to read the logs and quickly outline manual steps to fix the problem
+
+### read_aloud
+- copies iOS right click read text functionality for proofreading/review of flow when editing text
+- Firefox extension to enable read_aloud on web pages
+- super key + R enables read_aloud on any text selected in Fedora Silverblue
+- uses lightweight but high quality kokoro-onnx model for CPU functionality (GPU not needed)
+
+
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
