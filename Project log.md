@@ -271,6 +271,10 @@ indexing — the reverse direction needs no hash lookup at all, since rows are a
 - super key + R enables read_aloud on any text selected in Fedora Silverblue
 - uses lightweight but high quality kokoro-onnx model for CPU functionality (GPU not needed)
 
+### supstash
+- supply chain check for installed libraries
+- python version was 33s, Rust 1s after initial cache
+- an attempt to deal with supply chain attacks by providing a quick check on tampering
 
 ---
 
