@@ -276,6 +276,13 @@ indexing — the reverse direction needs no hash lookup at all, since rows are a
 - python version was 33s, Rust 1s after initial cache
 - an attempt to deal with supply chain attacks by providing a quick check on tampering
 
+### Rune: Rust based GUI applications
+- stash (find files)
+- universal search (content of files)
+- dictate (with word dictionary)
+- read aloud menu in tray icon
+- RustMM Chess (uses Stockfish and other chess engines); Chess UI with focus on polish and ease of use
+- RustMM Voice (voice control to find files and file content, open web pages, set Google Calendar appointments, open applications)
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
