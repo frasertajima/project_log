@@ -283,6 +283,21 @@ indexing — the reverse direction needs no hash lookup at all, since rows are a
 - read aloud menu in tray icon
 - RustMM Chess (uses Stockfish and other chess engines); Chess UI with focus on polish and ease of use
 - RustMM Voice (voice control to find files and file content, open web pages, set Google Calendar appointments, open applications)
+- RustMM To Do (Microsoft To Do replacement)
+- RustMM diskmap
+- RSS feed reader
+- Reading Forest book tracker
+- semantic search RSS
+- vocabulary search
+- book search
+- transcripts list
+- web clippings list
+- Shakespeare quotes
+- scroll speed adjustment for Gnome
+
+https://youtu.be/GX6OZSXyRus?si=lLqPkiYXceEkC5R2
+
+https://youtu.be/fzY7OyScYmI?si=TNKQoS_bYWkaEfvL
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
