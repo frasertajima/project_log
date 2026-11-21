@@ -295,9 +295,11 @@ indexing — the reverse direction needs no hash lookup at all, since rows are a
 - Shakespeare quotes
 - scroll speed adjustment for Gnome
 
-https://youtu.be/GX6OZSXyRus?si=lLqPkiYXceEkC5R2
+[RustMM To Do](https://youtu.be/GX6OZSXyRus?si=lLqPkiYXceEkC5R2)
 
-https://youtu.be/fzY7OyScYmI?si=TNKQoS_bYWkaEfvL
+[RustMM diskmap](https://youtu.be/fzY7OyScYmI?si=TNKQoS_bYWkaEfvL)
+
+
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
