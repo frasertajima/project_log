@@ -294,7 +294,7 @@ indexing — the reverse direction needs no hash lookup at all, since rows are a
 - web clippings list
 - Shakespeare quotes
 - scroll speed adjustment for Gnome
-- Scribe Library (Gnome interface for Kindle Scribe management: adding, deleting books and other files, tagging, searching, opening files to overcome slow Kindle Scribe navigation and organisation. Also overcomes Calibre's difficult USB connection workflow.
+- Scribe Library (Gnome interface for Kindle Scribe management: adding, deleting books and other files, tagging, searching, opening files to overcome slow Kindle Scribe navigation and organisation. Also overcomes Calibre's difficult USB connection workflow.)
 
 [RustMM To Do](https://youtu.be/GX6OZSXyRus?si=lLqPkiYXceEkC5R2)
 
