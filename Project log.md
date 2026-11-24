@@ -296,6 +296,7 @@ indexing — the reverse direction needs no hash lookup at all, since rows are a
 - scroll speed adjustment for Gnome
 - Scribe Library (Gnome interface for Kindle Scribe management: adding, deleting books and other files, tagging, searching, opening files to overcome slow Kindle Scribe navigation and organisation. Also overcomes Calibre's difficult USB connection workflow.)
 - RustMM Planner
+- voice triggered "encrypt selection" and "decrypt selection" using YubiKey for applications outside of RustMM Planner (such as terminal, Obsidian, etc.)
 
 [RustMM To Do](https://youtu.be/GX6OZSXyRus?si=lLqPkiYXceEkC5R2)
 
