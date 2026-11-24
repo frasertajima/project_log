@@ -301,6 +301,7 @@ indexing — the reverse direction needs no hash lookup at all, since rows are a
 [RustMM diskmap](https://youtu.be/fzY7OyScYmI?si=TNKQoS_bYWkaEfvL)
 
 
+yk_clone (scripting our duplication of YubiKey OpenPGP keys from 2021): https://github.com/frasertajima/yk_clone (currently a private repo as it undergoes testing)
 ---
 
 Later projects such as COBOLMM and stash use Claude extensively. 
